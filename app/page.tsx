@@ -2,6 +2,8 @@ import { list } from '@vercel/blob';
 import FileUploadForm from '../components/FileUploadForm';
 import FileList from '../components/FileList';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
   // 1. Fetch the list of blobs on the server
   const { blobs } = await list();
